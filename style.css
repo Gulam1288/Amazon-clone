@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 1350px;
+    min-width: 1354px;
     padding: 0 9px 0 10px;
     overflow: hidden;
     flex-wrap: nowrap;
@@ -214,12 +214,12 @@ body {
     position: absolute;
     height: 600px;
     background-size: cover;
-    width: 100%;
+    min-width: 1290px;
 }
 
 .hero-section img {
     height: 600px;
-    width: 100%;
+    width: 1372.5px;
 }
 
 .prev, .next {
@@ -266,8 +266,7 @@ body {
     padding: 25px 20px;
     position: relative;
     margin-bottom: 30px;
-    min-width: 20%;
-    max-width: 20%;
+    min-width: 25%;
 }
 
 .box a {
@@ -288,7 +287,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 135px);
     grid-template-rows: repeat(2, 125px);
-    gap: 20px;
+    gap: 10px;
 }
 
 .box-img {
@@ -340,17 +339,17 @@ body {
 
 .caption2 a {
     bottom: 210px;
-    left: 164px;
+    left: 155px;
 }
 
 .caption3 a {
-    bottom: 65px;
+    bottom: 70px;
     left: 9px;
 }
 
 .caption4 a {
-    bottom: 65px;
-    left: 164px;
+    bottom: 70px;
+    left: 155px;
 }
 
 .box2 .box1-img {
