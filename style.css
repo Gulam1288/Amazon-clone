@@ -214,12 +214,12 @@ body {
     position: absolute;
     height: 600px;
     background-size: cover;
-    min-width: 1290px;
+    min-width: 1350px;
 }
 
 .hero-section img {
     height: 600px;
-    width: 1372.5px;
+    width: 1473px;
 }
 
 .prev, .next {
