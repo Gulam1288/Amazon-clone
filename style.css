@@ -1,0 +1,854 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+body {
+    overflow: auto;
+    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0F1111;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1350px;
+    padding: 0 9px 0 10px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    position: static;
+}
+
+.nav-logo {
+    height: 50px;
+    min-width: 110px;
+    max-width: 110px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    height: 55px;
+    min-width: 100%;
+    background-size: cover;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid #FFF;
+}
+
+.nav-address {
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    max-width: 220px;
+}
+
+.nav-sub {
+    padding: 9px;
+}
+
+.nav-signin,.nav-return {
+    float: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.deliver {
+    color: #CCCCCC;
+    font-size: 0.80rem;
+    margin-left: 15px;
+}
+
+.add-icon {
+    display: flex;
+    text-align: center;
+}
+
+.india {
+    font-size: 1rem;
+    padding-left: 3px;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FeBD69;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1;
+    max-width: 50%;
+    border: none;
+    outline: none;
+}
+
+.nav-search:focus-within {
+    outline: 3px solid orange;
+}
+
+.search-select {
+    background-color: #F3F3F3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.search-input {
+    flex: 1;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    color: #0F1111;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.search-icon:hover {
+    background-color: orange;
+}
+
+.lang {
+    display: flex;
+    padding: 14px;
+}
+.lang p {
+    font-size: 0.80rem;
+    padding-top: 7px;
+    padding-left: 3px;
+}
+
+.sign-in {
+    font-size: 0.85rem;
+    color: #CCCCC1;
+}
+
+.ar-style {
+    font-size: 0.85rem;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    padding: 1px;
+}
+
+.nav-cart i {
+    font-size: 1.85rem;
+}
+
+.nav-sub {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9px 0 14px;
+    background-color: #232F3E;
+    height: 40px;
+    max-height: 45px;
+    align-items: center;
+    color: #FFF;
+    font-size: 14px;
+    min-width: 1350px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    position: static;
+}
+
+.panel-1 {
+    font-size: 16px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    position: static;
+}
+
+.panel a {
+    text-decoration: none;
+    color: #FFF;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    position: static;
+}
+
+.panel .border {
+    padding: 9.5px 6px;
+}
+
+.panel-2 .border {
+    padding: 10.5px 5px;
+}
+
+.panel-3 .border {
+    padding: 10.5px 0;
+}
+
+.panel-3 {
+    color: #DDDDDD;
+}
+
+.hero-section {
+    position: absolute;
+    height: 600px;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section img {
+    height: 600px;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 2.7%;
+    width: auto;
+    margin-top: -15px;
+    color: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 110px 30px;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 0 2px 2px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    border: 2px solid #1C8192;
+    outline: 2px solid #FFFFFF;
+    text-decoration: none;
+}
+
+.major {
+    position: relative;
+}
+
+.wrap {
+    position: relative;
+    min-width: 1350px;
+    margin-bottom: 270px;
+}
+
+.box {
+    height: 350px;
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+    position: relative;
+    margin-bottom: 30px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.box a {
+    position: absolute;
+    bottom: 15px;
+    color: #007185;
+    font-size: 14px;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.explore:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+.box1_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 135px);
+    grid-template-rows: repeat(2, 125px);
+    gap: 20px;
+}
+
+.box-img {
+    margin: 10px 0 10px 0;
+}
+
+.box1-img {
+    background-image: url('boat.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box2-img {
+    background-image: url('boult.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box3-img {
+    background-image: url('noise.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box4-img {
+    background-image: url('zeb.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.caption a {
+    position: absolute;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.caption1 a {
+    bottom: 210px;
+    left: 9px;
+}
+
+.caption2 a {
+    bottom: 210px;
+    left: 164px;
+}
+
+.caption3 a {
+    bottom: 65px;
+    left: 9px;
+}
+
+.caption4 a {
+    bottom: 65px;
+    left: 164px;
+}
+
+.box2 .box1-img {
+    background-image: url('tshirt.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box2 .box2-img {
+    background-image: url('shoes.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box2 .box3-img {
+    background-image: url('watches.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box2 .box4-img {
+    background-image: url('bags.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box3 .box1-img {
+    background-image: url('bedsheets.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box3 .box2-img {
+    background-image: url('homedecor.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box3 .box3-img {
+    background-image: url('homestorage.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box3 .box4-img {
+    background-image: url('lighting.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box4 .box1-img {
+    background-image: url('ac.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box4 .box2-img {
+    background-image: url('fridge.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box4 .box3-img {
+    background-image: url('mwave.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box4 .box4-img {
+    background-image: url('wmachines.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box5 .box1-img {
+    background-image: url('cleaning.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box5 .box2-img {
+    background-image: url('tyre.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box5 .box3-img {
+    background-image: url('helmets.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box5 .box4-img {
+    background-image: url('vaccum.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box6 .box1-img {
+    background-image: url('budget1.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box6 .box2-img {
+    background-image: url('43inch.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box6 .box3-img {
+    background-image: url('55inch.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box6 .box4-img {
+    background-image: url('65inch.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box7 .box1-img {
+    background-image: url('bikes.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box7 .box2-img {
+    background-image: url('sports.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box7 .box3-img {
+    background-image: url('soft.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box7 .box4-img {
+    background-image: url('indoor.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.box9 {
+    margin: 25px 30px 25px 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    background-color: #FFF;
+    padding: 20px;
+    min-width: 1350px;
+}
+
+.box9:hover {
+    overflow-x: scroll;
+}
+
+.single {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.single a {
+    margin: 20px 10px 15px 0;
+}
+
+.single a:hover {
+    transform: scale(1.02);
+}
+
+.single a:last-child {
+    margin-right: 0;
+}
+
+.s2 a {
+    margin-right: 65px;
+}
+
+.Off {
+    font-size: 14px;
+    color: #1C8192;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.p1 a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 1350px;
+    margin: 0 22px;
+}
+
+.box {
+    height: 350px;
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+    margin-right: 30px;
+    min-width: 20%;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.boxs1 .box1-img {
+    background-image: url('https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/613bYwWnlyL._AC_SY95_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs1 .box2-img {
+    background-image: url('https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/91iLXE4OWWL._AC_SY95_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs1 .box3-img {
+    background-image: url('https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71AHjc1UQgL._AC_SY95_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs1 .box4-img {
+    background-image: url('https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61RdUq3OsLL._AC_SY95_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs2 .box1-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img20/Events/GWBdaystore/Artboard_1QC2_1x._SY116_CB662999955_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs2 .box2-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img20/Events/GWBdaystore/Artboard_2QC2_1x._SY116_CB662999955_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs2 .box3-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img20/Events/GWBdaystore/Artboard_3QC2_1x._SY116_CB662999955_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs2 .box4-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img20/Events/GWBdaystore/Artboard_4QC2_1x._SY116_CB662999955_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs3 .box1-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC-PFF/PFF-1-186-116._SY116_CB636055991_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs3 .box2-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC-PFF/PFF-3-186-116._SY116_CB636055991_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs3 .box3-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC-PFF/PFF-2-186-116._SY116_CB636055991_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs3 .box4-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC-PFF/PFF-4-186-116._SY116_CB636055991_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs4 .box1-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-186-116._SY116_CB636048992_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs4 .box2-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs4 .box3-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.boxs4 .box4-img {
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T1/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg');
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.footer {
+    color: #FFF;
+    min-width: 1350px;
+}
+
+.f1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37475A;
+    height: 49px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.f1 a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.f1:hover {
+    background-color: #4f5c6b ;
+}
+
+.f2 {
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 120px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul p {
+    font-weight: bold;
+}
+
+ul li {
+    padding-bottom: 5px;
+}
+
+ul li a {
+    font-size: 14px;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.f3 {
+    background-color: #232F3E;
+    border-top: 1px solid #DDDDDD;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-2 {
+    background-image: url("amazon_logo.png");
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+    margin-right: 50px;
+}
+
+.lang-2 {
+    margin-left: 30px;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    align-items: center;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f4 {
+    background-color: #232F3E;
+    height: 70px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 200px;
+}
+
+.f4 a {
+    color: #DDDDDD;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.f4 a:hover {
+    text-decoration: underline;
+}
+
+.f5 {
+    background-color: #131A22;
+    flex-wrap: wrap;
+    height: 180px;
+    padding: 40px 20%;
+}
+
+.f5-sub {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f5-link a {
+    padding-right: 200px;
+    font-size: 12px;
+    color: #888;
+    text-decoration: none;
+}
+
+.f5-link a:hover {
+    text-decoration: underline;
+}
+
+.para {
+    color: #FFFFFF;
+}
+
+.credit {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.credit a {
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.credit a:hover {
+    text-decoration: underline;
+}
+
+.credit p {
+    margin-top: 5px;
+}
