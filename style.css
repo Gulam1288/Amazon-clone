@@ -532,14 +532,28 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-x: hidden;
     background-color: #FFF;
     padding: 20px;
     min-width: 1310px;
+    overflow: auto;
 }
 
-.box9:hover {
-    overflow-x: scroll;
+.box9::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+}
+
+.box9::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+.box9::-webkit-scrollbar-thumb {
+    background: #FFF;
+}
+
+.box9:hover::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
 }
 
 .single {
