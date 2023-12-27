@@ -223,6 +223,12 @@ body {
     width: 1408.5px;
 }
 
+@media screen and (min-width: 1200px) {
+    .hero-section img {
+        width: 1473px;
+    }
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
