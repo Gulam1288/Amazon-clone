@@ -751,7 +751,7 @@ body {
     background-color: #232F3E;
     display: flex;
     justify-content: space-evenly;
-    padding: 50px 120px;
+    padding: 50px 0;
 }
 
 ul {
@@ -767,7 +767,7 @@ ul li {
 }
 
 ul li a {
-    font-size: 14px;
+    font-size: 13px;
     color: #DDDDDD;
     text-decoration: none;
 }
