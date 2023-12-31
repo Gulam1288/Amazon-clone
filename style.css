@@ -2,7 +2,6 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
-    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -10,6 +9,11 @@ body {
     background-color: #EEE;
     display: flex;
     flex-direction: column;
+    min-width: 1470px;
+    max-width: 2500px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .navbar {
@@ -19,8 +23,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 1390px;
-    padding: 0 9px 0 10px;
     overflow: hidden;
     flex-wrap: nowrap;
     position: static;
@@ -28,14 +30,13 @@ body {
 
 .nav-logo {
     height: 50px;
-    min-width: 110px;
-    max-width: 110px;
+    width: 110px;
 }
 
 .logo {
     background-image: url("amazon_logo.png");
     height: 55px;
-    min-width: 100%;
+    width: 100%;
     background-size: cover;
 }
 
@@ -52,8 +53,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 180px;
-    max-width: 220px;
+    width: auto;
 }
 
 .nav-sub {
@@ -89,8 +89,7 @@ body {
     height: 40px;
     border-radius: 4px;
     text-align: center;
-    flex: 1;
-    max-width: 50%;
+    width: 45%;
     border: none;
     outline: none;
 }
@@ -167,14 +166,12 @@ body {
 .panel {
     display: flex;
     justify-content: space-between;
-    padding: 0 9px 0 14px;
     background-color: #232F3E;
     height: 40px;
-    max-height: 45px;
     align-items: center;
     color: #FFF;
     font-size: 14px;
-    min-width: 1386px;
+    width: 100%;
     overflow: hidden;
     flex-wrap: nowrap;
     position: static;
@@ -215,17 +212,17 @@ body {
     position: absolute;
     height: 600px;
     background-size: cover;
-    min-width: 1350px;
+    width: 100%;
 }
 
 .hero-section img {
     height: 600px;
-    width: 1408.5px;
+    width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
     .hero-section img {
-        width: 1473px;
+        width: 100%;
     }
 }
 
@@ -263,17 +260,17 @@ body {
 
 .wrap {
     position: relative;
-    min-width: 1350px;
+    width: 100%;
     margin-bottom: 270px;
 }
 
 .box {
     height: 350px;
     background-color: #FFFFFF;
-    padding: 25px 20px;
+    padding: 25px;
     position: relative;
     margin-bottom: 30px;
-    min-width: 25%;
+    width: 290px;
 }
 
 .box a {
@@ -294,7 +291,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 135px);
     grid-template-rows: repeat(2, 125px);
-    gap: 10px;
+    gap: 20px;
 }
 
 .box-img {
@@ -341,22 +338,27 @@ body {
 
 .caption1 a {
     bottom: 210px;
-    left: 9px;
+    left: 14px;
 }
 
 .caption2 a {
     bottom: 210px;
-    left: 155px;
+    left: 170px;
 }
 
 .caption3 a {
-    bottom: 70px;
-    left: 9px;
+    bottom: 66px;
+    left: 14px;
 }
 
 .caption4 a {
-    bottom: 70px;
-    left: 155px;
+    bottom: 66px;
+    left: 170px;
+}
+
+.caption a:hover {
+    color: #C7511F;
+    text-decoration: underline;
 }
 
 .box2 .box1-img {
@@ -528,60 +530,50 @@ body {
 }
 
 .box9 {
-    margin: 25px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     background-color: #FFF;
+    margin: 22px;
     padding: 20px;
-    min-width: 1310px;
-    overflow: auto;
 }
 
-.box9::-webkit-scrollbar {
-    width: 2px;
-    height: 8px;
-}
-
-.box9::-webkit-scrollbar-track {
-    background: #FFF;
-}
-
-.box9::-webkit-scrollbar-thumb {
-    background: #FFF;
-}
-
-.box9:hover::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 5px;
-}
-
-.single {
+.box9 .single{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: scroll;
+    margin-top: 10px;
 }
 
 .single a {
-    margin: 20px 10px 15px 0;
-}
-
-.single a:hover {
-    transform: scale(1.02);
+    margin: 20px;
 }
 
 .single a:last-child {
     margin-right: 0;
 }
 
-.s2 a {
-    margin-right: 65px;
+.single::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+}
+
+.single::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+.single::-webkit-scrollbar-thumb {
+    background: #FFF;
+}
+
+.single:hover::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
 }
 
 .Off {
     font-size: 14px;
     color: #1C8192;
     text-decoration: none;
-    margin-left: 10px;
     font-weight: 500;
 }
 
@@ -593,20 +585,7 @@ body {
 .section {
     display: flex;
     justify-content: space-evenly;
-    min-width: 1350px;
-    margin: 0 22px;
-}
-
-.box {
-    height: 350px;
-    background-color: #FFFFFF;
-    padding: 25px 20px;
-    margin-right: 30px;
-    min-width: 20%;
-}
-
-.box:last-child {
-    margin-right: 0;
+    width: 100%;
 }
 
 .boxs1 .box1-img {
@@ -723,7 +702,7 @@ body {
 
 .footer {
     color: #FFF;
-    min-width: 1410px;
+    width: 100%;
 }
 
 .f1 {
@@ -767,7 +746,7 @@ ul li {
 }
 
 ul li a {
-    font-size: 13px;
+    font-size: 12px;
     color: #DDDDDD;
     text-decoration: none;
 }
@@ -814,6 +793,10 @@ ul li a:hover {
     padding: 0 200px;
 }
 
+.f4:last-child {
+    padding: 0 0 0 200px;
+}
+
 .f4 a {
     color: #DDDDDD;
     padding: 0 10px;
@@ -829,7 +812,7 @@ ul li a:hover {
     background-color: #131A22;
     flex-wrap: wrap;
     height: 180px;
-    padding: 40px 20%;
+    padding: 40px 300px;
 }
 
 .f5-sub {
